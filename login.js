@@ -1,6 +1,6 @@
-const gameText=document.getElementByld('game-text2');
-const userInput=document.getElementByld('user-input2');
-const submitBtn=document.getElementByld('submit-btn2');
+const gameText=document.getElementById('game-text2');
+const userInput=document.getElementById('user-input2');
+const submitBtn=document.getElementById('submit-btn2');
 function print(text) {
 gameText.innerText += text + "\n";   
 gameText.scrollTop=gameText.scrollHeight;
@@ -31,7 +31,7 @@ if(currentStep==="askUsername"){
       document.getElemntByld("main-link").style.display="block";
    }else if(username==="teacher" && password1==="qwerty"){
       print("You are logged in as a teacher.");
-      document.getElementByld("main-link").style.display="block";
+      document.getElementById("main-link").style.display="block";
    }else{
       print("Incorrect password.");
       await sleep(1500);
